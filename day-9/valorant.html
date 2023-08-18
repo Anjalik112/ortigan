@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="valorent.css">
+</head>
+<body>
+    <div class="heading">
+    <h1>
+        Valorant Charcters
+    </h1>
+</div>
+    <div id="div1" class="container"></div>
+    
+    <script>
+        var d=document.getElementById('div1');
+        fetch("https://valorant-api.com/v1/agents")
+        .then (function(res){
+            res.json().then(function(data){
+                // console.log(data);
+                data.data.forEach(function(agents){
+                    var t=`<div id="div1" class="container">
+                        <div class="card">
+                           <div>
+                             <img src="${agents.displayIcon}"
+                             
+                             <div class="texting">
+                            <p>Name:${agents.displayName}</p>
+                            <p>Description:${agents.description}</p>
+                            <p>Devloper's Name:${agents.developerName}</p>
+                            </div>
+                        </div>
+                            </div>`
+                            d.innerHTML=d.innerHTML+t
+                            console.log(agents);
+                });
+            });
+        });
+        
+        </script>
+</body>
+</html>
