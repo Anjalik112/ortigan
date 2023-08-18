@@ -1,0 +1,23 @@
+body{
+    background-color: bisque;
+}
+.flex{
+    display: flex;
+    width: 100%;
+    /* flex-direction: row; */
+    flex-wrap: wrap
+}
+
+.box{
+    background-color: rgb(229, 153, 136);
+    align-items: flex-start;
+    position: relative;
+    padding: 20px;
+    margin: 8px;
+    width: 29%;
+}
+.bt1{
+    background-color: gray;
+    border-radius: 6px;
+    border-color: black;
+}
