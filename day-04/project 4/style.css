@@ -1,0 +1,115 @@
+body{
+    background-color: rgb(16, 25, 45);
+    
+}
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('path/to/font-files/gill-sans.woff2') format('woff2'),
+         url('path/to/font-files/gill-sans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  
+.heading{
+   
+    color: rgb(202, 215, 243);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 300px;
+    font-size: 40px;
+}
+.card{
+    width:330px;
+    padding:20px;
+    margin:20px;
+    display: inline-block;
+}
+.conatiner{
+    background-color: rgba(106, 103, 162, 0.776);
+    width: 87%; 
+    /* padding: 10px; */
+    /* padding-left: 80px; */
+    border-radius: 15px;
+    margin-left: 100px;
+   
+}
+img{
+    width: 100%;
+    border-radius: 6px;
+    display: block;
+}
+
+  
+  .card:hover {
+    -ms-transform: scale(1.0); 
+    -webkit-transform: scale(1.0); 
+    transform: scale(1.5); 
+  }
+  .card1{
+    width:500px;
+    padding: 8px;
+    background-color: rgb(161, 220, 85);
+    display: inline-block;
+    border-radius: 10px;
+    text-align:center;
+    
+}
+img:hover{
+    -ms-transform: scale(1.0); 
+    -webkit-transform: scale(1.0); 
+    transform: scale(1.5); 
+}
+#img1{
+    background-color: rgb(234, 231, 229);
+    
+}
+
+
+.conatiner1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 100px;
+    width: 100%;
+    text-align: center;
+}
+.images{
+    width: 49%;
+    display: inline-block;
+}
+.a1, .a2{
+    font-size: 20px;
+}
+.a1::after{
+     
+        content:"";
+        display:block;
+        width: 22em;
+        margin-left: 40px;
+        border-bottom: 1px solid rgba(118, 117, 117, 0.591);
+        
+    }
+.a2::after{
+        content:"";
+        display:block;
+        width: 22em;
+        margin-left: 40px;
+        border-bottom: 1px solid rgba(118, 117, 117, 0.591);
+         
+    }
+    .bt1{
+        background-color: rgba(32, 70, 20, 0.656);
+        font-size: 30px;
+        border: none;
+        border-radius: 8px;
+
+    }
+#bt2{
+    background-color: rgb(109, 111, 113);
+}
+.bt1:hover{
+    background-color: rgb(17, 28, 18);
+    color: aliceblue
+}
+#bt2:hover{
+    background-color: gray;
+}
